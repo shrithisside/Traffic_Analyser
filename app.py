@@ -2,7 +2,7 @@
 Traffic Violation Analysis & Risk Prediction System
 Data Mining and Data Warehousing - College Project
 """
-#Jai Shree Ram 
+#Jai Shree Ram
 
 import streamlit as st
 import pandas as pd
@@ -59,10 +59,18 @@ with st.sidebar:
 
     page = st.radio(
         "Navigation",
-        ["🏠 Dashboard", "📝 Add Violation", "📊 Analytics", "🔬 Mining Engine", "🗄️ Data Warehouse"],
+        [
+            "🏠 Dashboard",
+            "📝 Add Violation",
+            "📊 Analytics",
+            "🔬 Mining Engine",
+            "🔗 Association Rules",
+            "🚨 Anomaly Detection",
+            "📦 OLAP Operations",
+            "🗄️ Data Warehouse",
+        ],
         label_visibility="collapsed",
     )
-
 
     st.markdown("---")
 
@@ -117,6 +125,18 @@ elif page == "📊 Analytics":
 
 elif page == "🔬 Mining Engine":
     from pages.mining import render
+    render(df)
+
+elif page == "🔗 Association Rules":
+    from pages.association import render
+    render(df)
+
+elif page == "🚨 Anomaly Detection":
+    from pages.anomaly import render
+    render(df)
+
+elif page == "📦 OLAP Operations":
+    from pages.olap import render
     render(df)
 
 elif page == "🗄️ Data Warehouse":
