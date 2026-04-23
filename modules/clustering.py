@@ -1,3 +1,7 @@
+                        #Name: Shriwayanta Maiti, PRN: 20240802169
+                        #Name: Harshal Nanekar, PRN: 20240802163
+
+
 """
 K-Means Clustering Module
 Groups areas into High / Medium / Low risk zones.

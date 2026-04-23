@@ -1,3 +1,7 @@
+                        #Name: Shriwayanta Maiti, PRN: 20240802169
+                        #Name: Harshal Nanekar, PRN: 20240802163
+
+
 """
 Insights Generator – extracts key findings from the dataset.
 """

@@ -1,3 +1,7 @@
+                        #Name: Shriwayanta Maiti, PRN: 20240802169
+                        #Name: Harshal Nanekar, PRN: 20240802163
+
+
 """
 Association Rule Mining using Apriori algorithm.
 Finds patterns between violation types co-occurring in the same area/day.
