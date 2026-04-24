@@ -55,6 +55,7 @@ def _zscore_bar(x_vals, z_scores, threshold, title):
         "#ef4444" if z > threshold else "#3b82f6" if z < -threshold else "#475569"
         for z in z_scores
     ]
+    
     fig = go.Figure(go.Bar(x=x_vals, y=z_scores, marker_color=colors))
     fig.add_hline(y=threshold,  line_dash="dash", line_color="#ef4444",
                   annotation_text=f"+{threshold} (upper bound)")
