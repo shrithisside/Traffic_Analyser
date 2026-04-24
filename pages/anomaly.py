@@ -116,6 +116,7 @@ def render(df: pd.DataFrame):
     # ════════════════════════════════════════════════════════════════
     with tab1:
         area_df = compute_zscore_anomalies(df, group_by="area", threshold=threshold)
+        
         if area_df.empty:
             st.info("No data.")
         else:
@@ -157,6 +158,7 @@ def render(df: pd.DataFrame):
 
             st.markdown('<div class="section-title">📋 Anomaly Summary</div>', unsafe_allow_html=True)
             anom_rows = area_df[area_df["is_anomaly"]]
+            
             if anom_rows.empty:
                 st.success("✅ No area anomalies detected at this threshold.")
             else:
