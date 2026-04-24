@@ -208,6 +208,7 @@ class DataStore:
     def clear(self):
         pd.DataFrame(columns=COLUMNS).to_csv(DATA_PATH, index=False)
 
+
     # ── seed with realistic sample data ─────────────────────────────────────
     def _seed(self):
         rng = np.random.default_rng(42)
