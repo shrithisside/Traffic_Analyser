@@ -1,3 +1,7 @@
+                        #Name: Shriwayanta Maiti, PRN: 20240802169
+                        #Name: Harshal Nanekar, PRN: 20240802163
+
+
 """
 Traffic Violation Analysis & Risk Prediction System
 Data Mining and Data Warehousing - College Project
@@ -99,7 +103,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown(
-        "<div style='font-size:0.72rem;color:#6b7280;text-align:center;'>© 2025 DMW College Project</div>",
+        "<div style='font-size:0.72rem;color:#6b7280;text-align:center;'>©DMW College Project by Shriwayanta Maiti & Harshal Nanekar</div>",
         unsafe_allow_html=True,
     )
 
